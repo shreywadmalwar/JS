@@ -53,8 +53,11 @@
 // setTimeout(greet, 2000, 'shreyash')
 
 
-const promise = new promise((resolve, reject) => {
-    setTimeout(() = > {
-        resolve()
-    }, 5000) 
-})
+// const promise = new promise((resolve, reject) => {
+//     setTimeout(() = > {
+//         resolve()
+//     }, 5000) 
+// })
+
+
+
