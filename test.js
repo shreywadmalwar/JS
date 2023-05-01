@@ -56,5 +56,5 @@
 const promise = new promise((resolve, reject) => {
     setTimeout(() = > {
         resolve()
-    }, 5000)
+    }, 5000) 
 })
