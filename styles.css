@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Poppins:wght@300&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+/* font-family: 'Nunito', sans-serif;
+font-family: 'Nunito Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Ubuntu', sans-serif; */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+}
+
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 50px;
+  box-shadow: grey;
+  position: sticky;
+  top: 0;
+  bottom: 0;
+}
+
+#nav_bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#nav_bar li {
+  list-style: none;
+  padding: 0px 20px;
+  color: grey;
+}
+#nav_bar li a {
+  color: rgb(102, 102, 102);
+  text-decoration: none;
+  font-weight: bold;
+  transition: 200ms ease-in;
+}
+
+#nav_bar li a:hover,
+#nav_bar li a.active {
+  color: rgb(109, 180, 180);
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  margin: 30px;
+}
+
+.box {
+  color: blue;
+  font-family: "Poppins", sans-serif;
+  background-color: rgb(246, 252, 255);
+  padding: 30px;
+  word-wrap: break-word;
+  border: 1px solid rgb(195, 191, 191);
+  border-radius: 20px;
+}
+.box h2 {
+  font-size: 100%;
+}
+
+.box:hover h2 {
+  color: red;
+}
+
+.box img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.box:hover img {
+  transform: scale(1.1);
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+}
+
+/* only admin page */
+
+.main_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  margin: 20px 600px 20px 600px;
+  padding: 20px;
+  border: 3px solid gray;
+  border-radius: 20px;
+}
+
+.header_admin {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
+  color: grey;
+}
+
+.field {
+  padding: 20px;
+}
+
+button[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049;
+}
+input[type="text"],
+input[type="number"],
+textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  font-size: 16px;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+textarea:focus {
+  outline: none;
+  border: 2px solid #4caf50;
+}
+
+
+/* ONLY CART.HTML  */
+
+.container_cart {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 10px;
+  border: 1px solid grey;
+}
+
+.card_wrap {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+}
+
+.cart_img {
+  margin: 0px;
+  padding: 0px;
+  width: 150px;
+  height: auto;
+}
+
+.cart_img img {
+  width: 30%;
+  height: auto;
+  border-radius: 10px;
+  overflow: hidden;
+}
